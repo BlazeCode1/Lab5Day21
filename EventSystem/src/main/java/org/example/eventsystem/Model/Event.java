@@ -12,8 +12,8 @@ public class Event {
     private String ID;
     private String description;
     private int capacity;
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private LocalDate startDate;
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private LocalDate endDate;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    private LocalDateTime startDate;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    private LocalDateTime endDate;
 }
